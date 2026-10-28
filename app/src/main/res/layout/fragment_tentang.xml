@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Tentang.FragmentTentang">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        app:titleTextColor="@color/white"
+        app:navigationIconTint="@color/white"
+        android:fontFamily="@font/poppins_semibold"
+        android:theme="@style/CardView.Light"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Tentang Aplikasi -->
+    <LinearLayout
+        android:id="@+id/tentang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        android:gravity="start"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Tentang Aplikasi"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:textAlignment="viewStart"
+            android:textSize="14sp"
+            android:text="Skinlytic adalah aplikasi mobile berbasis Deep Learning yang membantu mendeteksi penyakit kanker kulit sejak dini dengan cepat dan praktis. Pengguna cukup memindai kulit menggunakan kamera atau mengunggah foto untuk mendapatkan analisis otomatis mengenai kemungkinan kelainan kulit, seperti melanoma, karsinoma, dan kondisi lainnya." />
+    </LinearLayout>
+
+    <!-- Cara Penggunaan -->
+    <LinearLayout
+        android:id="@+id/caraguna"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        android:gravity="start"
+        app:layout_constraintTop_toBottomOf="@id/tentang"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Cara Penggunaan"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:textAlignment="viewStart"
+            android:textSize="14sp"
+            android:text="1. Pilih menu deteksi\n2. Upload atau pilih gambar dari galeri\n3. Tunggu hingga proses deteksi selesai\n4. Hasil deteksi akan ditampilkan di layar" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
